@@ -1,0 +1,55 @@
+@import "src/style/var";
+
+
+:global{
+  .hero{
+    text-align: center;
+    padding: 40px 0;
+    .container{
+      max-width: 550px;
+      @include lg{
+        max-width: 1100px;
+        display: flex;
+        justify-content: space-between;
+      }
+    }
+    h1{
+      margin-bottom: 30px;
+    }
+    .description{
+      margin-bottom: 16px;
+    }
+    .link{
+      display: block;
+      margin-bottom: 10px;
+      word-wrap: break-word;
+      color: $blue;
+      text-decoration: underline;
+    }
+    button{
+      border: 0;
+      font-size: 0;
+      cursor: pointer;
+      background: transparent;
+    }
+    picture{
+      max-height:280px;
+      height: 100%;
+      overflow: hidden;
+      display: block;
+      img{
+        width: 100%;
+      }
+    }
+    .col{
+      @include lg{
+        width: 47%;
+      }
+    }
+    .iframe-video.active{
+      height: 270px;
+      width: 100%;
+      max-width: 500px;
+    }
+  }
+}
