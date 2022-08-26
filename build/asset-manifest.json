@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/static/css/main.4170314e.css",
+    "main.js": "/static/js/main.7dd4a860.js",
+    "static/js/787.e8769ff5.chunk.js": "/static/js/787.e8769ff5.chunk.js",
+    "static/media/image.jpeg": "/static/media/image.54cabc45ac89a33914eb.jpeg",
+    "static/media/mr-smith.jpeg": "/static/media/mr-smith.e531080f67aa38405389.jpeg",
+    "index.html": "/index.html",
+    "main.4170314e.css.map": "/static/css/main.4170314e.css.map",
+    "main.7dd4a860.js.map": "/static/js/main.7dd4a860.js.map",
+    "787.e8769ff5.chunk.js.map": "/static/js/787.e8769ff5.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4170314e.css",
+    "static/js/main.7dd4a860.js"
+  ]
+}
