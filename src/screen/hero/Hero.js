@@ -1,20 +1,16 @@
 import '../../style/global.scss';
 import "./Hero.module.scss";
-import img from '../../images/image.jpeg';
 
 function Hero() {
-    function handleClick(){
-        const frame = document.querySelector('.iframe-video');
-        const iconYouTube = document.querySelector('.icon-youTube');
+    const idVideo = 'RK1K2bCg4J8';
+    const srcImgYT = `//img.youtube.com/vi/${idVideo}/0.jpg`;
+    const srcVideoYT = `https://www.youtube.com/embed/${idVideo}?autoplay=1&mute=1`;
 
-        if(!frame.getAttribute('src')){
-            const link  = frame.dataset.src;
-            frame.setAttribute('src', link);
-            frame.removeAttribute('data-src');
-            frame.classList.add('active');
-            iconYouTube.style.display="none";
-        }
+    function handleClick(){
+        const player = document.querySelector('#player');
+        player.innerHTML = `<iframe src=${srcVideoYT}" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>'`
     }
+
     return (
         <section className="hero">
             <div className="container">
@@ -23,12 +19,11 @@ function Hero() {
                     <p className="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut culpa deserunt dignissimos enim ?</p>
                     <a className='link' href="https://www.youtube.com/watch?v=RK1K2bCg4J8&t=2414s" target="_blank" rel="noreferrer">https://www.youtube.com/watch?v=RK1K2bCg4J8&t=2414s</a>
                 </div>
-                <div className="col">
+                <div className="col" id="player">
                     <button onClick={handleClick}>
                         <picture className="icon-youTube">
-                            <img src={img} alt="img-iframe"/>
+                            <img src={srcImgYT} alt="img-iframe"/>
                         </picture>
-                        <iframe className="iframe-video" allow="autoplay;" allowFullScreen height="0" width="100%" data-src="https://www.youtube.com/watch?v=RK1K2bCg4J8&t=2414s" title="img-iframe" frameBorder="0"></iframe>
                     </button>
                 </div>
             </div>
